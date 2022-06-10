@@ -54,8 +54,7 @@ $(call inherit-product, vendor/flamingo/target/product/properties.mk)
 
 ifeq ($(GAPPS_BUILD),true)
     # Include GMS, Modules, and Pixel features.
-    $(call inherit-product-if-exists, vendor/google/gms/config.mk)
-    $(call inherit-product-if-exists, vendor/google/pixel/config.mk)
+    $(call inherit-product-if-exists, vendor/gms/products/gms.mk)
 endif
 
 # Flatten APEXs for performance
